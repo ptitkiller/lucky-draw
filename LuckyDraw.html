@@ -50,14 +50,11 @@
 new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(a,b){try{if("function"!==typeof b){if("object"===typeof b&&null!==b){if(b instanceof HTMLElement||b instanceof Node||-1!=g.indexOf(b))return;g.push(b)}return b}}catch(H){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer.hide': (function(a){a=a.split(".");for(var b=window,c=0;c<a.length&&(b=b[a[c]],b);c++);return b})('dataLayer.hide'),'gaData': window['gaData'],'dataLayer': window['dataLayer']})}, 2000);</script></head>
 
 <body ng-app="app" ng-class="&#39;theme-&#39; + theme" class="ng-scope theme-olive">
-  
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWZ9HX7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
 
   <div class="loader-block" id="loader" style="display: none;"></div>
-  <link rel="stylesheet" href="./LuckyDraw_files/vendor-f1143d218a.css">
+  <link rel="stylesheet" href="LuckyDraw_files/vendor-f1143d218a.css">
 
-  <link rel="stylesheet" href="./LuckyDraw_files/app-0316cbad9f.css">
+  <link rel="stylesheet" href="LuckyDraw_files/app-0316cbad9f.css">
   <div class="wrapper" ng-style="{&#39;background-image&#39;: url_background}">
     <!-- uiView: --><ui-view class="ng-scope" style=""><!-- ngIf: !$ctrl.lockUI --><id-lucky-draw ng-if="!$ctrl.lockUI" data="$ctrl.data" setting="$ctrl.setting" results="$ctrl.results" is-limited="$ctrl.isLimited(r)" class="ng-scope ng-isolate-scope"><header class="header">
   <div class="container-fluid">
@@ -105,7 +102,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                
                 
               </div>
-              <!-- <img class="prize-image ng-scope" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/bronze-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./LuckyDraw_files/bronze-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/silver-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./LuckyDraw_files/silver-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/gold-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./LuckyDraw_files/gold-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/diamond-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./LuckyDraw_files/diamond-prize.svg">end ngRepeat: prize in $ctrl.prizes -->
+              <!-- <img class="prize-image ng-scope" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/bronze-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="LuckyDraw_files/bronze-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/silver-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="LuckyDraw_files/silver-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/gold-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="LuckyDraw_files/gold-prize.svg">end ngRepeat: prize in $ctrl.prizes<img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/diamond-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="LuckyDraw_files/diamond-prize.svg">end ngRepeat: prize in $ctrl.prizes -->
             </div>
             
           </header>
@@ -124,7 +121,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                 <li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state" style="">
                   <div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div>
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -138,7 +135,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                   
                   <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div><!-- end ngIf: !$ctrl.characters[n] -->
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -152,7 +149,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                   
                   <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div><!-- end ngIf: !$ctrl.characters[n] -->
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -166,7 +163,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                   
                   <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div><!-- end ngIf: !$ctrl.characters[n] -->
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -180,7 +177,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                   
                   <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div><!-- end ngIf: !$ctrl.characters[n] -->
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -194,7 +191,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                   
                   <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                     <div class="slot-number">
-                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                     </div>
                   </div><!-- end ngIf: !$ctrl.characters[n] -->
                   <div class="slot-item ng-scope ng-enter-prepare">
@@ -210,7 +207,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
                 
                 <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                   <div class="slot-number">
-                    <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                    <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                   </div>
                 </div><!-- end ngIf: !$ctrl.characters[n] -->
                 <div class="slot-item ng-scope ng-enter-prepare">
@@ -225,7 +222,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
               
               <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
                 <div class="slot-number">
-                  <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                  <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
                 </div>
               </div><!-- end ngIf: !$ctrl.characters[n] -->
               <div class="slot-item ng-scope ng-enter-prepare">
@@ -240,7 +237,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
             
             <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
               <div class="slot-number">
-                <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+                <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
               </div>
             </div><!-- end ngIf: !$ctrl.characters[n] -->
             <div class="slot-item ng-scope ng-enter-prepare">
@@ -255,7 +252,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
           
           <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item slot-item-1 ng-scope" ng-if="!$ctrl.characters[n]">
             <div class="slot-number">
-              <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./LuckyDraw_files/bronze-prize.svg"></span>
+              <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="LuckyDraw_files/bronze-prize.svg"></span>
             </div>
           </div><!-- end ngIf: !$ctrl.characters[n] -->
           <div class="slot-item ng-scope ng-enter-prepare">
